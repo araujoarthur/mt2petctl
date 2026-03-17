@@ -2,13 +2,19 @@ import typer
 import click
 import shlex
 from click.testing import CliRunner
-from rich import print as rprint
 from pathlib import Path
 from store import Store, StoreError
+from rich import print as rprint
+from rich.console import Console
 from pretty_printers.pet import print_pet
 
 app = typer.Typer(name="mt2petctl")
 store: Store = None
+
+console = Console()
+
+def clear_screen():
+    console.clear()
 
 @app.callback(invoke_without_command=True)
 def main(ctx: typer.Context, path: Path = typer.Option("./store.json")):
@@ -16,15 +22,21 @@ def main(ctx: typer.Context, path: Path = typer.Option("./store.json")):
     store = Store(path)
     if ctx.invoked_subcommand is None:
         click_app = typer.main.get_command(app)
-        runner = CliRunner()
         while True:
             try:
-                raw = input(">> ")
-                if raw.strip() in ("exit", "quit"):
+                raw = input(">> ").strip()
+                if raw in ("exit", "quit"):
                     break
+                if raw in ("clr", "clear"):
+                    clear_screen()
+                    continue
                 args = shlex.split(raw)
-                result = runner.invoke(click_app, args, catch_exceptions=False)
-                typer.echo(result.output, nl=False)
+                ctx = click_app.make_context("mt2petctl", args)
+                click_app.invoke(ctx)
+            except click.exceptions.UsageError as e:
+                rprint(f"[red]{e}[/red]")
+            except click.exceptions.Exit:
+                pass
             except (KeyboardInterrupt, EOFError):
                 break
 

@@ -14,7 +14,7 @@ class Store:
     def _save(self):
         with open(self._path, "w") as f:
             json.dump(self.to_dict(), f, indent=2)
-            
+
     def _initialize_from_file(self, path: Path):
         path = Path(path)
         if not path.exists():
@@ -39,37 +39,38 @@ class Store:
         if pet_name not in self.Pets:
             raise StoreError(f"pet '{pet_name}' not found")
         
-        pet: Pet = self.Pets[pet_name]
-        pet.add(rarity, field, value)
+        self.Pets[pet_name].add(rarity, field, value)
+        self._save()
         return self
 
     def sub_pet_quantity(self, pet_name: str, rarity: Rarities, field: StoreQuantities, value: int) -> Store:
         if pet_name not in self.Pets:
             raise StoreError(f"pet '{pet_name}' not found")
     
-        pet: Pet = self.Pets[pet_name]
-        pet.sub(rarity, field, value)
+        self.Pets[pet_name].sub(rarity, field, value)
+        self._save()
         return self
     
     def set_pet_quantity(self, pet_name: str, rarity: Rarities, field: StoreQuantities, value: int) -> Store:
         if pet_name not in self.Pets:
             raise StoreError(f"pet '{pet_name}' not found")
 
-        pet: Pet = self.Pets[pet_name]
-        pet.set(rarity, field, value)
+        self.Pets[pet_name].set(rarity, field, value)
+        self._save()
         return self
     
     def zero_pet_quantity(self, pet_name: str, rarity: Rarities, field: StoreQuantities, value: int) -> Store:
         if pet_name not in self.Pets:
             raise StoreError(f"pet '{pet_name}' not found")
 
-        pet: Pet = self.Pets[pet_name]
-        pet.zero(rarity, field)
+        self.Pets[pet_name].zero(rarity, field)
+        self._save()
         return self
 
     def zero_all(self) -> Store:
         for pet in self.Pets.values():
             pet.zero()
+        self._save()
         return self
 
     def get_pet(self, pet_id: str) -> Pet | None:
@@ -80,18 +81,19 @@ class Store:
             raise StoreError(f"pet '{pet_id}' already exists")
         pet = Pet(pet_id, display_name)
         self.Pets[pet_id] = pet
+        self._save()
         return pet
 
     def delete_pet(self, pet_id: str) -> None:
         if pet_id not in self.Pets:
             raise StoreError(f"pet '{pet_id}' not found")
         del self.Pets[pet_id]
+        self._save()
 
     def to_dict(self) -> dict:
         return {"pets": {pet.id:pet.to_dict() for pet in self.Pets.values()}}
     
     def save(self, path: Path):
-        path = Path(path)
-        with open(path, "w") as f:
-            json.dump(self.to_dict(), f, indent=2)
+        self._path = Path(path) if path else self._path
+        self._save()
         
