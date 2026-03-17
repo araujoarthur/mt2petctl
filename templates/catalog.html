@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% from "pet_card.html" import pet_card %}
+
+{% block content %}
+<main class="catalog">
+  {% for pet in pets %}
+    {{ pet_card(pet, rarities, rarity_glow) }}
+  {% endfor %}
+</main>
+{% endblock %}

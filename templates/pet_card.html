@@ -1,0 +1,26 @@
+{% macro pet_card(pet, rarities, rarity_glow) %}
+<article class="card" style="--glow: {{ rarity_glow['common'] }};">
+  <div class="card-icon">
+    <img src="static/img/{{ pet.id }}.png" alt="{{ pet.display_name }}" />
+  </div>
+  <div class="card-body">
+    <p class="card-name">{{ pet.display_name }}</p>
+    {% for rarity in rarities %}
+      {% set qty = pet|attr(rarity.value) %}
+      <div class="rarity-row">
+        <span class="rarity-label {{ rarity.value }}">{{ rarity.value }}</span>
+        <div class="rarity-qty">
+          <div class="qty-chip">
+            <span class="val {% if qty._available > 0 %}positive{% endif %}">{{ qty._available }}</span>
+            <span class="lbl">avail</span>
+          </div>
+          <div class="qty-chip">
+            <span class="val {% if qty._want > 0 %}positive{% endif %}">{{ qty._want }}</span>
+            <span class="lbl">want</span>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</article>
+{% endmacro %}
