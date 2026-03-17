@@ -1,5 +1,21 @@
 {% macro pet_card(pet, rarities, rarity_glow) %}
-<article class="card" style="--glow: {{ rarity_glow['common'] }};">
+{% set total_owned    = namespace(v=0) %}
+{% set total_available = namespace(v=0) %}
+{% set total_want     = namespace(v=0) %}
+{% for rarity in rarities %}
+  {% set qty = pet|attr(rarity.value) %}
+  {% set total_owned.v     = total_owned.v     + qty._owned %}
+  {% set total_available.v = total_available.v + qty._available %}
+  {% set total_want.v      = total_want.v      + qty._want %}
+{% endfor %}
+
+<article class="card"
+  style="--glow: {{ rarity_glow['common'] }};"
+  data-name="{{ pet.display_name | lower }}"
+  data-owned="{{ total_owned.v }}"
+  data-available="{{ total_available.v }}"
+  data-want="{{ total_want.v }}"
+>
   <div class="card-icon">
     <img src="static/img/{{ pet.id }}.png" alt="{{ pet.display_name }}" />
   </div>

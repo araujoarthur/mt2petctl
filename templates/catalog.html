@@ -2,6 +2,13 @@
 {% from "pet_card.html" import pet_card %}
 
 {% block content %}
+<div class="sort-bar">
+  <span class="sort-label">Sort by</span>
+  <button class="sort-btn active" data-sort="name" data-dir="asc">Name A→Z</button>
+  <button class="sort-btn" data-sort="name" data-dir="desc">Name Z→A</button>
+  <button class="sort-btn" data-sort="available" data-dir="desc">Available ↓</button>
+  <button class="sort-btn" data-sort="want" data-dir="desc">Want ↓</button>
+</div>
 <main class="catalog">
   {% for pet in pets %}
     {{ pet_card(pet, rarities, rarity_glow) }}

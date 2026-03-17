@@ -128,7 +128,7 @@ class Store:
         """
         if pet_name not in self.Pets:
             raise StoreError(f"pet '{pet_name}' not found")
-        self.Pets[pet_name].set(rarity, field, value)
+        self.Pets[pet_name].set_quantity(rarity, field, value)
         self._save()
         return self
 

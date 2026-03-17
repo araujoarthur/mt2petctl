@@ -232,6 +232,40 @@
     color: var(--muted);
     border-top: 1px solid #ffffff08;
   }
+
+  /* ── SORT BAR ── */
+  .sort-bar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .sort-label {
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .sort-btn {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--muted);
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 0.3rem 0.9rem;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .sort-btn:hover { color: var(--text); border-color: #ffffff28; }
+  .sort-btn.active { color: var(--accent); border-color: var(--accent); }
 </style>
 </head>
 <body>
@@ -258,14 +292,13 @@ const RARITY_COLORS = {
   mythic:    '#f87171',
 };
 
+// rarity glow on hover
 document.querySelectorAll('.card').forEach(card => {
   const icon = card.querySelector('.card-icon');
-
   card.querySelectorAll('.rarity-row').forEach(row => {
     const label = row.querySelector('.rarity-label');
     const rarity = [...label.classList].find(c => RARITY_COLORS[c]);
     if (!rarity) return;
-
     row.addEventListener('mouseenter', () => {
       icon.style.setProperty('--active-glow', RARITY_COLORS[rarity]);
       icon.classList.add('glow-active');
@@ -275,6 +308,32 @@ document.querySelectorAll('.card').forEach(card => {
     });
   });
 });
+
+// sorting
+const catalog = document.querySelector('.catalog');
+
+function sortCards(sortKey, dir) {
+  const cards = [...catalog.querySelectorAll('.card')];
+  cards.sort((a, b) => {
+    const aVal = sortKey === 'name' ? a.dataset.name : parseFloat(a.dataset[sortKey]);
+    const bVal = sortKey === 'name' ? b.dataset.name : parseFloat(b.dataset[sortKey]);
+    if (aVal < bVal) return dir === 'asc' ? -1 : 1;
+    if (aVal > bVal) return dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+  cards.forEach(c => catalog.appendChild(c));
+}
+
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    sortCards(btn.dataset.sort, btn.dataset.dir);
+  });
+});
+
+// default sort
+sortCards('name', 'asc');
 </script>
 
 </body>
