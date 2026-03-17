@@ -1,0 +1,5 @@
+__pycache__/
+.penv/
+store.json
+store2.json
+old_store.json

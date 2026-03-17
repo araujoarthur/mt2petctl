@@ -1,0 +1,1060 @@
+{
+  "pets": {
+    "zappy": {
+      "displayName": "Zappy",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "glimmer": {
+      "displayName": "Glimmer",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "chomp": {
+      "displayName": "Chomp",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "gooby": {
+      "displayName": "Gooby",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "snarl": {
+      "displayName": "Snarl",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "riptide": {
+      "displayName": "Riptide",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "pixyl": {
+      "displayName": "Pixyl",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "finley": {
+      "displayName": "Finley",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilbramble": {
+      "displayName": "Lil' Bramble",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilkragg": {
+      "displayName": "Lil' Kragg",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilsmolder": {
+      "displayName": "Lil' Smolder",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilvyra": {
+      "displayName": "Lil' Vyra",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilmalgrim": {
+      "displayName": "Lil' Malgrim",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilzephyr": {
+      "displayName": "Lil' Zephyr",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilmaelstrom": {
+      "displayName": "Lil' Maelstrom",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lildelve": {
+      "displayName": "Lil' Delve",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "lilmimic": {
+      "displayName": "Lil' Mimic",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "cactoro": {
+      "displayName": "Cactoro",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "luma": {
+      "displayName": "Luma",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "oblivion": {
+      "displayName": "Oblivion",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "waeve": {
+      "displayName": "Waeve",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "grimm": {
+      "displayName": "Grimm",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "aurelia": {
+      "displayName": "Aurelia",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "ignis": {
+      "displayName": "Ignis",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "umbral": {
+      "displayName": "Umbral",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "primus": {
+      "displayName": "Primus",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "vino": {
+      "displayName": "vino",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "torrent": {
+      "displayName": "Torrent",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "nova": {
+      "displayName": "Nova",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "embi": {
+      "displayName": "Embi",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "liljollyroot": {
+      "displayName": "Lil' Jollyroot",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    },
+    "drillmaw": {
+      "displayName": "Drillmaw",
+      "common": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "uncommon": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "rare": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "epic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "legendary": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      },
+      "mythic": {
+        "owned": 0,
+        "available": 0,
+        "want": 0
+      }
+    }
+  }
+}
