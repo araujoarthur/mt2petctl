@@ -51,7 +51,7 @@ def main(ctx: typer.Context, path: Path = typer.Option("./store.json")):
 from exporter import export
 
 @app.command()
-def export_catalog(output: Path = typer.Option("./output/catalog.html", help="Output path")):
+def export_catalog(output: Path = typer.Option(None, help="Output folder")):
     """Export pet catalog as HTML"""
     try:
         path = export(store, output)

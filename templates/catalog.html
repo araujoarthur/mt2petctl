@@ -3,11 +3,17 @@
 
 {% block content %}
 <div class="sort-bar">
-  <span class="sort-label">Sort by</span>
+  <span class="sort-label">Sort</span>
   <button class="sort-btn active" data-sort="name" data-dir="asc">Name A→Z</button>
   <button class="sort-btn" data-sort="name" data-dir="desc">Name Z→A</button>
   <button class="sort-btn" data-sort="available" data-dir="desc">Available ↓</button>
   <button class="sort-btn" data-sort="want" data-dir="desc">Want ↓</button>
+
+  <span class="sort-label" style="margin-left: 1rem;">Filter</span>
+  <button class="filter-btn" data-filter="trading">Trading</button>
+  <button class="filter-btn" data-filter="wanted">Wanted</button>
+  <button class="filter-btn" data-filter="available">Available</button>
+  <button class="filter-btn" data-filter="all">Clear</button>
 </div>
 <main class="catalog">
   {% for pet in pets %}

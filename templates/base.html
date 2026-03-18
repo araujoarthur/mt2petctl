@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:type"        content="website" />
+<meta property="og:site_name"   content="MT2 Pet Catalog" />
+<meta property="og:title"       content="araujoarthurr's Miners Tycoon 2 Pet Catalog" />
+<meta property="og:description" content="{{ pet_count }} pets tracked · last updated {{ last_updated }}" />
+<meta property="og:image"       content="https://araujoarthurr.github.io/mt2catalog/static/img/preview.png" />
+<meta property="og:url"         content="https://araujoarthurr.github.io/mt2catalog/" />
+<meta name="theme-color"        content="#f0c040" />
 <title>araujoarthurr's MT2 Pet Catalog</title>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
@@ -266,6 +273,24 @@
 
   .sort-btn:hover { color: var(--text); border-color: #ffffff28; }
   .sort-btn.active { color: var(--accent); border-color: var(--accent); }
+
+  .filter-btn {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+  background: transparent;
+  border: 1px dashed var(--card-border);
+  border-radius: 20px;
+  padding: 0.3rem 0.9rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+  .filter-btn:hover { color: var(--text); border-color: #ffffff28; }
+  .filter-btn.active { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+
+  .card.hidden { display: none; }
 </style>
 </head>
 <body>
@@ -329,6 +354,27 @@ document.querySelectorAll('.sort-btn').forEach(btn => {
     document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     sortCards(btn.dataset.sort, btn.dataset.dir);
+  });
+});
+
+// filtering
+function applyFilter(filter) {
+  document.querySelectorAll('.card').forEach(card => {
+    const available = parseFloat(card.dataset.available);
+    const want      = parseFloat(card.dataset.want);
+    let visible = true;
+    if      (filter === 'trading')   visible = available > 0 || want > 0;
+    else if (filter === 'wanted')    visible = want > 0;
+    else if (filter === 'available') visible = available > 0;
+    card.classList.toggle('hidden', !visible);
+  });
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter(btn.dataset.filter);
   });
 });
 
